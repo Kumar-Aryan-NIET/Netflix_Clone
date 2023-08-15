@@ -1,0 +1,28 @@
+{
+  "name": "netflix_clone",
+  "version": "1.0.0",
+  "description": "Developed Using MERN Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kumar-Aryan-NIET/Netflix_Clone.git"
+  },
+  "keywords": [
+    "Netflix_Clone"
+  ],
+  "author": "Kumar Aryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kumar-Aryan-NIET/Netflix_Clone/issues"
+  },
+  "homepage": "https://github.com/Kumar-Aryan-NIET/Netflix_Clone#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.3",
+    "nodemon": "^3.0.1"
+  }
+}
