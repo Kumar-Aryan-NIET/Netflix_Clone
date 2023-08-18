@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
-import { signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { firebaseAuth } from "../utils/firbase-config";
 import { FaPowerOff, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ isScrolled }) => {
   const links = [
@@ -16,6 +17,14 @@ const Navbar = ({ isScrolled }) => {
 
   const [showSearch, setShowSearch] = React.useState(false);
   const [inputHover, setInputHover] = React.useState(false);
+
+  const navigate = useNavigate();
+
+  onAuthStateChanged(firebaseAuth, (currentUser) => {
+    if (!currentUser) {
+      navigate("/login");
+    }
+  });
 
   return (
     <Container>
