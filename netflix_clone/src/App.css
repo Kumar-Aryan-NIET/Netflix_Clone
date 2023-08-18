@@ -36,3 +36,11 @@ body::-webkit-scrollbar {
 .a-center {
   align-items: center;
 }
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
+}

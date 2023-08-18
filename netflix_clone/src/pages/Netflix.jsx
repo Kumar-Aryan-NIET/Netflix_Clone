@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../component/Navbar";
 
 const Netflix = () => {
   return (
-    <div>
-      Netflix
-    </div>
-  )
-}
+    <Container>
+      <Navbar />
+    </Container>
+  );
+};
 
-export default Netflix
+const Container = styled.div``;
+
+export default Netflix;
